@@ -1,12 +1,12 @@
 import './Playlist.css';
 import TrackList from '../TrackList/TrackList';
 
-function Playlist({ playlistName, playlistTracks, onRemove, onNameChange, onSave}) {
- 
-    const handleNameChange = (e) => {
-      onNameChange(e.target.value);
-    };
-  
+function Playlist({ playlistName, playlistTracks, onRemove, onNameChange, onSave }) {
+
+  const handleNameChange = (e) => {
+    onNameChange(e.target.value);
+  };
+
   return (
     <div className="Playlist">
       <input placeholder='New Playlist' value={playlistName} onChange={handleNameChange} />
