@@ -1,3 +1,4 @@
+import React from 'react';
 import './Track.css';
 const Track = ({ isRemoval, track, onAdd, onRemove }) => {
 
